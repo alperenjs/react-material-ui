@@ -1,21 +1,21 @@
+import { Person } from '@mui/icons-material';
+import { Button } from '@mui/material';
 import './App.css';
+import styled from '@emotion/styled';
+
+const MyComponent = styled(Button)`
+background-color: orange;
+&:hover  {
+    background-color: red;
+  }
+`;
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <MyComponent variant="contained" size='large' startIcon={<Person />}> ALPERsEN </MyComponent>
     </div>
   );
 }
